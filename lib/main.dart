@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riltopia/screens/Auth/auth_screen.dart';
-
+import 'package:riltopia/screens/boardingScreens/socialsScreen/socials_screen.dart';
 import 'common/theme/themes.dart';
 
 void main() {
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: buildLightTheme(),
       // theme: buildDarkTheme(),
-      home: const AuthScreen(),
+      home: const SocialsScreen(),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const kEmptyColor = Color(0x0d000000);
+const kEmptyColor = Color(0x00000000); // 100% Empty
 
 /// main colors
 const cRilPurple = Color(0xFF8027CF);

@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:riltopia/common/theme/colors.dart';
+import 'package:riltopia/common/theme/constants.dart';
 import 'package:riltopia/common/theme/text.dart';
+import 'package:riltopia/screens/boardingScreens/emailAuth/emailAuth_screen.dart';
+
+import '../socials_screen.dart';
 
 class SignInButton extends StatelessWidget {
   final String type;
@@ -18,7 +22,7 @@ class SignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width*0.75,
+      // width: width*0.75,
       child: Card(
         margin: const EdgeInsets.symmetric(vertical: 5),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(99)),
@@ -30,10 +34,12 @@ class SignInButton extends StatelessWidget {
           child: ListTile(
             leading: icon,
             title: Text('With $type',
-                style: subTitle(shadow: false)
+                style: subTitle()
                     .copyWith(color: cGrey300)
             ),
-            onTap: () {},
+            onTap: () {
+              kPushNavigator(context, const EmailAuthScreen());
+            },
           ),
         ),
       ),

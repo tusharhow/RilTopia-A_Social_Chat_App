@@ -17,7 +17,7 @@ Shadow bigTxtShadow = const Shadow(
     blurRadius: 1,
     offset: Offset(0, 2));
 
-TextStyle title({required bool shadow}) => TextStyle(
+TextStyle title({bool shadow = false}) => TextStyle(
   // fontFamily: family,
     color: backgroundColor,
     fontFamily: 'Bahnschrift',
@@ -25,10 +25,15 @@ TextStyle title({required bool shadow}) => TextStyle(
     fontSize: 22,
     shadows: [ shadow ? smallTxtShadow : noTxtShadow]);
 
-TextStyle subTitle({required bool shadow}) => TextStyle(
-  // fontFamily: family,
+TextStyle subTitle({bool shadow = false}) => TextStyle(
     color: backgroundColor,
     fontFamily: 'Bahnschrift',
     fontWeight: FontWeight.w600,
     fontSize: 20,
     shadows: [ shadow ? bigTxtShadow : noTxtShadow]);
+
+TextStyle hint({bool shadow = false}) => TextStyle(
+    color: cGrey300,
+    fontFamily: 'Bahnschrift',
+    fontSize: 16,
+    shadows: [ shadow ? smallTxtShadow : noTxtShadow]);
