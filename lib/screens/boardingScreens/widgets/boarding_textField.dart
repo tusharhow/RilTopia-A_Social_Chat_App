@@ -25,24 +25,28 @@ class RilTextField extends StatelessWidget {
     );
 
     return
-      Padding(
+      Container(
       padding: const EdgeInsets.symmetric(vertical: 6),
+      height: 65,
       child: PhysicalModel(
           borderRadius: BorderRadius.circular(14),
           color: Colors.white,
           elevation: 2.5,
-          child: TextFormField(
-            controller: controller,
-            validator: validator,
-            // onChanged: (value) => print(controller.value),
-            decoration: InputDecoration(
-                contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
-                hintText: hintText,
-                hintStyle: hint(),
-                filled: true,
-                fillColor: backgroundColor,
-                enabledBorder: textFieldBorder,
-                border: textFieldBorder
+          child: Center(
+            child: TextFormField(
+              controller: controller,
+              validator: validator,
+              // onChanged: (value) => print(controller.value),
+              decoration: InputDecoration(
+                  // contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 18, /*vertical: 18*/),
+                  hintText: hintText,
+                  hintStyle: hint(),
+                  filled: true,
+                  fillColor: backgroundColor,
+                  enabledBorder: textFieldBorder,
+                  border: textFieldBorder
+              ),
             ),
           )
       ),

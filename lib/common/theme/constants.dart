@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+MediaQueryData kMediaQuery(context) => MediaQuery.of(context);
 ThemeData kTheme(context) => Theme.of(context);
 NavigatorState kNavigator(context) => Navigator.of(context);
 

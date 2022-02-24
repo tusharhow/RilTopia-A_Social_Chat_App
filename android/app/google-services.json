@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "943959166120",
+    "project_id": "riltopia",
+    "storage_bucket": "riltopia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943959166120:android:016c254a8da088fbfd869d",
+        "android_client_info": {
+          "package_name": "com.biton.riltopia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943959166120-v63n70om6n6ircbop3h6dl4emgn966k0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj7yXBjE6jCrzZDaC2q-_d90cbYzAnKWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943959166120-v63n70om6n6ircbop3h6dl4emgn966k0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

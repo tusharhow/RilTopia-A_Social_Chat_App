@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:riltopia/common/theme/colors.dart';
 import 'package:riltopia/common/theme/text.dart';
 import 'package:riltopia/screens/boardingScreens/socialsScreen/widgets/signin_button.dart';
+import 'package:riltopia/screens/boardingScreens/widgets/boarding_nextButton.dart';
 import 'package:riltopia/screens/boardingScreens/widgets/boarding_textField.dart';
 import 'package:riltopia/widgets/riltopia_title.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -39,9 +40,15 @@ class EmailAuthScreen extends StatelessWidget {
                   hintText: 'Enter your password',
                   validator: (val) {},
                   controller: passController,
-                )
-            ],
-          )),
+                ),
+
+                NextButton(
+                  title: 'Join us',
+                  onPressed: (){},
+                ),
+              ],
+            ),
+            ),
     );
   }
 }
