@@ -4,7 +4,7 @@ import 'package:riltopia/common/theme/text.dart';
 
 class SignInButton extends StatelessWidget {
   final String type;
-  final IconData icon;
+  final Widget icon;
   final double width;
 
   const SignInButton(
@@ -28,7 +28,7 @@ class SignInButton extends StatelessWidget {
             // highlightColor: Colors.black.withOpacity(0.5),
           ),
           child: ListTile(
-            leading: Icon(icon),
+            leading: icon,
             title: Text('With $type',
                 style: subTitle(shadow: false)
                     .copyWith(color: cGrey300)

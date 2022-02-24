@@ -23,6 +23,7 @@ ThemeData buildLightTheme() {
   return base.copyWith(
     splashColor: cRilPurple,
     hintColor: cRilSecondaryPurple,
+    highlightColor: cRilDeepPurple,
     canvasColor: cRilSurfacePurple,
     primaryColorDark: cLightPurple,
     primaryColorLight: cLightPurple,
@@ -55,6 +56,7 @@ ThemeData buildDarkTheme() {
   return base.copyWith(
     splashColor: cRilPurple,
     hintColor: cRilSecondaryPurple,
+    highlightColor: cRilDeepPurple,
     canvasColor: cRilSurfacePurple,
     primaryColorDark: cLightPurple,
     primaryColorLight: cLightPurple,

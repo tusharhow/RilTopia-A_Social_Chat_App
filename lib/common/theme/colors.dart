@@ -4,6 +4,7 @@ const kEmptyColor = Color(0x0d000000);
 
 /// main colors
 const cRilPurple = Color(0xFF8027CF);
+const cRilDeepPurple = Color(0xFF621BEE);
 const cRilSecondaryPurple = Color(0xFFb57cee);
 
 /// sub colors
