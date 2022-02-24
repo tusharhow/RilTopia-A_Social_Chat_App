@@ -2,37 +2,33 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 import 'constants.dart';
 
-TextStyle rilStyle({weight = 400, size = 14}) {
-  int wIndex = weight~/100; // ~/ Make sure its int
-// TextStyle rilStyle(family,size) {
-  return TextStyle(
-    // fontFamily: family,
-      fontFamily: 'Bahnschrift',
-      fontWeight: FontWeight.values[wIndex],
-      fontSize: size.toDouble());
-}
+Shadow noTxtShadow = Shadow(
+    color: Colors.black.withOpacity(0.00),
+    blurRadius: 0,
+    offset: const Offset(0, 0));
 
-TextStyle titleWithShadow = const TextStyle(
+Shadow smallTxtShadow = const Shadow(
+    color: Colors.black38,
+    blurRadius: 4,
+    offset: Offset(0, 4));
+
+Shadow bigTxtShadow = const Shadow(
+    color: Colors.black54,
+    blurRadius: 1,
+    offset: Offset(0, 2));
+
+TextStyle title({required bool shadow}) => TextStyle(
   // fontFamily: family,
     color: backgroundColor,
     fontFamily: 'Bahnschrift',
     fontWeight: FontWeight.w700,
     fontSize: 22,
-    shadows: [
-    Shadow(
-    color: Colors.black38,
-    blurRadius: 4,
-    offset: Offset(0, 4)) ]
-);
+    shadows: [ shadow ? smallTxtShadow : noTxtShadow]);
 
-TextStyle subTitleWithShadow = const TextStyle(
+TextStyle subTitle({required bool shadow}) => TextStyle(
   // fontFamily: family,
     color: backgroundColor,
     fontFamily: 'Bahnschrift',
     fontWeight: FontWeight.w600,
     fontSize: 20,
-    shadows: [
-      Shadow(
-          color: Colors.black54,
-          blurRadius: 1,
-          offset: Offset(0, 2)) ]);
+    shadows: [ shadow ? bigTxtShadow : noTxtShadow]);
