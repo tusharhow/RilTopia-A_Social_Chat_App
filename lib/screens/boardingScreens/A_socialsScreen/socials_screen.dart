@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:riltopia/common/theme/colors.dart';
 import 'package:riltopia/common/theme/text.dart';
-import 'package:riltopia/screens/boardingScreens/socialsScreen/widgets/signin_button.dart';
+import 'package:riltopia/screens/boardingScreens/A_socialsScreen/socials_screen.dart';
+import 'package:riltopia/screens/boardingScreens/A_socialsScreen/widgets/signin_button.dart';
 import 'package:riltopia/widgets/riltopia_title.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -26,17 +27,28 @@ class SocialsScreen extends StatelessWidget {
               Text('Log in with', style: subTitle(shadow: true)),
               const SizedBox(height: 10),
 
-              SignInButton('Google',
-                  Image.asset('assets/icons/google-icon.png',
-                    height: 40,), width),
+              SignInButton(
+                  cardType: 'Google',
+                  cardWidth: width,
+                  iconAsset: SizedBox(
+                      width: 40,
+                      child: SvgPicture.asset('assets/svg_icons/icon_google.svg' )),
+              ),
 
-              SignInButton('Facebook',
-                  Image.asset('assets/icons/facebook-icon.png',
-                    height: 40,), width),
+              SignInButton(
+                  cardType: 'Facebook',
+                  cardWidth: width,
+                  iconAsset: SizedBox(
+                      width: 40,
+                      child: SvgPicture.asset('assets/svg_icons/icon_facebook.svg' )),
+              ),
 
-              SignInButton('Email',
-                  const Icon(Icons.mail, size: 40,
-                      color: cRilDeepPurple), width),
+              SignInButton(
+                  cardType: 'Email',
+                  cardWidth: width,
+                  iconAsset: const Icon(Icons.mail, size: 40,
+                      color: cRilDeepPurple),
+              ),
             ],
           )),
     );

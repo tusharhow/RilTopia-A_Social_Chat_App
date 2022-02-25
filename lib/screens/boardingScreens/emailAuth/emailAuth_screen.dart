@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:riltopia/common/theme/colors.dart';
 import 'package:riltopia/common/theme/text.dart';
-import 'package:riltopia/screens/boardingScreens/socialsScreen/widgets/signin_button.dart';
+import 'package:riltopia/screens/boardingScreens/A_socialsScreen/socials_screen.dart';
 import 'package:riltopia/screens/boardingScreens/widgets/boarding_nextButton.dart';
 import 'package:riltopia/screens/boardingScreens/widgets/boarding_textField.dart';
 import 'package:riltopia/widgets/riltopia_title.dart';

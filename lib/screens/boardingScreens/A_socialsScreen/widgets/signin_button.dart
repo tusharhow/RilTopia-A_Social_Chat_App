@@ -7,22 +7,22 @@ import 'package:riltopia/screens/boardingScreens/emailAuth/emailAuth_screen.dart
 import '../socials_screen.dart';
 
 class SignInButton extends StatelessWidget {
-  final String type;
-  final Widget icon;
-  final double width;
+  final String cardType;
+  final Widget iconAsset;
+  final double cardWidth;
 
   const SignInButton(
-      this.type,
-      this.icon,
-      this.width,
       {Key? key,
+        required this.cardType,
+        required this.iconAsset,
+        required this.cardWidth,
       }) : super(key: key);
 
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // width: width*0.75,
+      width: cardWidth*0.85,
       child: Card(
         margin: const EdgeInsets.symmetric(vertical: 5),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(99)),
@@ -32,8 +32,8 @@ class SignInButton extends StatelessWidget {
             // highlightColor: Colors.black.withOpacity(0.5),
           ),
           child: ListTile(
-            leading: icon,
-            title: Text('With $type',
+            leading: iconAsset,
+            title: Text('With $cardType',
                 style: subTitle()
                     .copyWith(color: cGrey300)
             ),

@@ -62,7 +62,7 @@ flutter:
 
   assets:
     - assets/
-    - assets/icons/
+#    - assets/icons/
     - assets/svg_icons/
     - assets/resources/
     - assets/resources/2.0x/

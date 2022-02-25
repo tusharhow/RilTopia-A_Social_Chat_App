@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riltopia/screens/boardingScreens/socialsScreen/socials_screen.dart';
+import 'package:riltopia/screens/boardingScreens/A_socialsScreen/socials_screen.dart';
 import 'common/theme/themes.dart';
 
 void main() {
